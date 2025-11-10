@@ -1,6 +1,6 @@
 # Portfolio 
 
-
+**[click here](https://kushgandhi18.github.io/my_portfolio/)**
 
 ## Portfolio Sections
 ✔️ Summary and About me\
