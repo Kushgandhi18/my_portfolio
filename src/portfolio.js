@@ -162,7 +162,7 @@ const achievementSection = {
     {
       title: "Python Essentials for MLOps",
       subtitle: "Completed an in-depth course focusing on ML pipelines and model deployment.",
-      image: require("./assets/images/Algorithmic_Trading.png"),
+      image: require("./assets/images/Python_Essentials_For_MLOps_Coursera.png"),
       imageAlt: "Python Certificate",
       footerLink: [
         { name: "Certificate", url: "https://www.coursera.org/account/accomplishments/verify/6O5Q3KRQ4082" }
@@ -171,7 +171,7 @@ const achievementSection = {
     {
       title: "Mathematics & Statistics of Machine Learning & Data Science",
       subtitle: "Covered mathematical foundations of ML.",
-      image: require("./assets/images/Algorithmic_Trading.png"),
+      image: require("./assets/images/Mathematics_and_Statistics_of_ML_and_DataScience.png"),
       imageAlt: "ML Certificate",
       footerLink: [
         { name: "Certificate", url: "https://www.udemy.com/certificate/UC-48175787-f0c0-4b8e-816f-5bafef48d8c7/" }
@@ -185,7 +185,8 @@ const achievementSection = {
       footerLink: [
         { name: "Certificate", url: "https://www.udemy.com/certificate/UC-5bcbe192-f5f1-4bc9-913a-8d1f3ca209e7/" }
       ]
-    }
+    },
+   
   ],
   display: true
 };

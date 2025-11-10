@@ -1,5 +1,5 @@
 {
-  "homepage": "https://Kushgandhi18.github.io",
+  "homepage": "https://kushgandhi18.github.io/my_portfolio",
   "name": "Kush Gandhi",
   "version": "0.1.0",
   "private": true,
@@ -21,8 +21,8 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "start": "node fetch.js && react-scripts start",
-    "build": "node fetch.js && react-scripts build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
     "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
