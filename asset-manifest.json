@@ -1,11 +1,13 @@
 {
   "files": {
     "main.css": "/my_portfolio/static/css/main.df3ed5b2.css",
-    "main.js": "/my_portfolio/static/js/main.1c005161.js",
+    "main.js": "/my_portfolio/static/js/main.b9ce999b.js",
     "static/css/487.bb36206c.chunk.css": "/my_portfolio/static/css/487.bb36206c.chunk.css",
     "static/js/487.5da8d1f6.chunk.js": "/my_portfolio/static/js/487.5da8d1f6.chunk.js",
     "static/css/990.c6a7ee28.chunk.css": "/my_portfolio/static/css/990.c6a7ee28.chunk.css",
     "static/js/990.d4baaf99.chunk.js": "/my_portfolio/static/js/990.d4baaf99.chunk.js",
+    "static/media/MLOps_Machine_Learning_Operation.png": "/my_portfolio/static/media/MLOps_Machine_Learning_Operation.fd896cab9080e5e9ef11.png",
+    "static/media/MLOps_Platform_Amazon_SageMaker_and_Azure copy.png": "/my_portfolio/static/media/MLOps_Platform_Amazon_SageMaker_and_Azure copy.3540ca97ac453e13f732.png",
     "static/media/Python_Essentials_For_MLOps_Coursera.png": "/my_portfolio/static/media/Python_Essentials_For_MLOps_Coursera.e0af2d17109084dff3c2.png",
     "static/media/DevOps, DataOps, MLOps.png": "/my_portfolio/static/media/DevOps, DataOps, MLOps.7ad74439b7621430b16c.png",
     "static/media/Mathematics_and_Statistics_of_ML_and_DataScience.png": "/my_portfolio/static/media/Mathematics_and_Statistics_of_ML_and_DataScience.934a67032ad9eec79b09.png",
@@ -22,7 +24,7 @@
     "index.html": "/my_portfolio/index.html",
     "static/media/talksCardBack.svg": "/my_portfolio/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
     "main.df3ed5b2.css.map": "/my_portfolio/static/css/main.df3ed5b2.css.map",
-    "main.1c005161.js.map": "/my_portfolio/static/js/main.1c005161.js.map",
+    "main.b9ce999b.js.map": "/my_portfolio/static/js/main.b9ce999b.js.map",
     "487.bb36206c.chunk.css.map": "/my_portfolio/static/css/487.bb36206c.chunk.css.map",
     "487.5da8d1f6.chunk.js.map": "/my_portfolio/static/js/487.5da8d1f6.chunk.js.map",
     "990.c6a7ee28.chunk.css.map": "/my_portfolio/static/css/990.c6a7ee28.chunk.css.map",
@@ -30,6 +32,6 @@
   },
   "entrypoints": [
     "static/css/main.df3ed5b2.css",
-    "static/js/main.1c005161.js"
+    "static/js/main.b9ce999b.js"
   ]
 }
