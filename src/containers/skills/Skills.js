@@ -1,10 +1,7 @@
 import React, { useContext } from "react";
 import "./Skills.scss";
-import SoftwareSkill from "../../components/softwareSkills/SoftwareSkill";
-import { illustration, skillsSection } from "../../portfolio";
+import { skillsSection } from "../../portfolio";
 import { Fade } from "react-reveal";
-import codingPerson from "../../assets/lottie/codingPerson";
-import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import StyleContext from "../../contexts/StyleContext";
 
 export default function Skills() {
@@ -15,59 +12,43 @@ export default function Skills() {
   }
 
   return (
-    <div className={isDark ? "dark-mode main" : "main"} id="skills">
-      <div className="skills-main-div">
-        <Fade left duration={1000}>
-          <div className="skills-image-div">
-            {illustration.animated ? (
-              <DisplayLottie animationData={codingPerson} />
-            ) : (
-              <img
-                alt="Man Working"
-                src={require("../../assets/images/developerActivity.svg")}
-              />
-            )}
+    <div className={isDark ? "dark-mode skills-main-div" : "skills-main-div"} id="skills">
+      <Fade bottom duration={1000} distance="20px">
+        <div className="skills-container">
+          
+          {/* --- HEADING --- */}
+          <h1 className="skills-heading">{skillsSection.title}</h1>
+          <p className={isDark ? "dark-mode skills-subtitle" : "skills-subtitle"}>
+            {skillsSection.subTitle}
+          </p>
+
+          {/* --- SKILL CARDS GRID --- */}
+          <div className="skills-grid">
+            {skillsSection.skillCategories.map((category, index) => (
+              <div className="skill-card" key={index}>
+                
+                {/* Icon for the card */}
+                <div className="skill-card-icon">
+                  {category.icon}
+                </div>
+
+                {/* Title of the card */}
+                <h3 className="skill-card-title">{category.title}</h3>
+
+                {/* List of skill pills */}
+                <div className="skill-pills-container">
+                  {category.skills.map((skill, i) => (
+                    <span className="skill-pill" key={i}>
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+
+              </div>
+            ))}
           </div>
-        </Fade>
-
-        <Fade right duration={1000}>
-          <div className="skills-text-div">
-            <h1
-              className={isDark ? "dark-mode skills-heading" : "skills-heading"}
-            >
-              {skillsSection.title}
-            </h1>
-
-            <p
-              className={
-                isDark
-                  ? "dark-mode subTitle skills-text-subtitle"
-                  : "subTitle skills-text-subtitle"
-              }
-            >
-              {skillsSection.subTitle}
-            </p>
-
-
-            <SoftwareSkill />
-
-            <div>
-              {skillsSection.skills.map((skills, i) => (
-                <p
-                  key={i}
-                  className={
-                    isDark
-                      ? "dark-mode subTitle skills-text"
-                      : "subTitle skills-text"
-                  }
-                >
-                  {skills}
-                </p>
-              ))}
-            </div>
-          </div>
-        </Fade>
-      </div>
+        </div>
+      </Fade>
     </div>
   );
 }

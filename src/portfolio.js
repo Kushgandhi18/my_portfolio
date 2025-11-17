@@ -39,28 +39,84 @@ const socialMediaLinks = {
 
 
 // Skills Section
+// Skills Section
 const skillsSection = {
-  title: "What I Do",
-  subTitle:
-    "FULL STACK & MOBILE DEVELOPER WHO LOVES CLOUD TECH AND MACHINE LEARNING",
-  skills: [
-    emoji("⚡ Building responsive web and mobile apps using Flutter, React, and Node.js"),
-    emoji("⚡ Designing and integrating REST APIs and real-time Firebase backends"),
-    emoji("⚡ Managing cloud deployments and optimizing databases on AWS, GCP, and Firebase")
-  ],
-  softwareSkills: [
-    { skillName: "Java", fontAwesomeClassname: "fab fa-java" },
-    { skillName: "Python", fontAwesomeClassname: "fab fa-python" },
-    { skillName: "ReactJS", fontAwesomeClassname: "fab fa-react" },
-    { skillName: "NodeJS", fontAwesomeClassname: "fab fa-node-js" },
-    { skillName: "MySQL", fontAwesomeClassname: "devicon-mysql-plain" },
-    { skillName: "Flutter", fontAwesomeClassname: "devicon-flutter-plain" },
-    { skillName: "Spring Boot", fontAwesomeClassname: "devicon-spring-plain" },
-    { skillName: "Firebase", fontAwesomeClassname: "devicon-firebase-plain" },
-    { skillName: "Docker", fontAwesomeClassname: "devicon-docker-plain" }
+  title: "Technical Skills",
+  subTitle: "Comprehensive technical expertise across full-stack development",
+  display: true, // Set to true to display this section
 
-  ],
-  display: true
+  // An array of all your skill categories
+  skillCategories: [
+    {
+      title: "Programming Languages",
+      // You can use emoji or a react-icon component name (e.g., "FaCode")
+      // For this example, I'll use emoji for simplicity
+      icon: "💻", 
+      skills: [
+        "Java",
+        "Python",
+        "JavaScript",
+        "C++",
+        "SQL",
+        "Dart"
+      ]
+    },
+    {
+      title: "Web Technologies",
+      icon: "🌐",
+      skills: [
+        "ReactJS",
+        "Node.js",
+        "Spring Boot",
+        "HTML5",
+        "CSS3 / SCSS",
+        "REST APIs"
+      ]
+    },
+    {
+      title: "Databases",
+      icon: "📊",
+      skills: [
+        "MySQL",
+        "PostgreSQL",
+        "MongoDB",
+        "Firebase",
+      ]
+    },
+    {
+      title: "Cloud & DevOps",
+      icon: "☁️",
+      skills: [
+        "AWS",
+        "GCP",
+        "Docker",
+        "Kubernetes",
+        "CI/CD",
+        "Terraform"
+      ]
+    },
+    {
+      title: "Mobile Development",
+      icon: "📱",
+      skills: [
+        "Flutter",
+        "React Native",
+        "Android (Java)"
+      ]
+    },
+    {
+      title: "Machine Learning",
+      icon: "🤖",
+      skills: [
+        "TensorFlow",
+        "PyTorch",
+        "Scikit-learn",
+        "MLOps",
+        "Pandas",
+        "NumPy"
+      ]
+    }
+  ]
 };
 
 // Education Section
@@ -93,10 +149,10 @@ const techStack = {
   viewSkillBars: true,
   experience: [
     { Stack: "Frontend / Mobile Development", progressPercentage: "90%" },
-    { Stack: "Backend & APIs", progressPercentage: "80%" },
-    { Stack: "Machine Learning", progressPercentage: "70%" }
+    { Stack: "Backend & APIs", progressPercentage: "85%" },
+    { Stack: "Machine Learning", progressPercentage: "75%" }
   ],
-  displayCodersrank: true
+  displayCodersrank: false
 };
 
 // Work Experience Section

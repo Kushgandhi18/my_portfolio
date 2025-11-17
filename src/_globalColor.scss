@@ -88,3 +88,16 @@ $medium: #000;
 $stackoverflow: #f48024;
 $instagram: #c13584;
 $kaggle: #20beff;
+
+/* --- Add these for your new skill cards --- */
+
+/* Light Mode Card Colors */
+$card-color: #ffffff; // e.g., white
+$pill-color: #f0f0f0;  // e.g., light grey
+$pill-text-color: #333333; // e.g., dark text
+
+/* Dark Mode Card Colors */
+$dark-card-color: #252525;     // e.g., a dark grey
+$dark-card-border: #444444;    // e.g., a slightly lighter grey for the border
+$dark-pill-color: #4a4a4a;     // e.g., a medium grey
+$dark-pill-text-color: #ffffff; // e.g., white text

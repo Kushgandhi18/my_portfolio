@@ -1,8 +1,9 @@
-import React, {useContext} from "react";
+import React, { useContext } from "react";
 import "./StartupProjects.scss";
-import {bigProjects} from "../../portfolio";
-import {Fade} from "react-reveal";
+import { bigProjects } from "../../portfolio";
+import { Fade } from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
+import { GoProject } from "react-icons/go";
 
 export default function StartupProject() {
   function openUrlInNewTab(url) {
@@ -13,7 +14,7 @@ export default function StartupProject() {
     win.focus();
   }
 
-  const {isDark} = useContext(StyleContext);
+  const { isDark } = useContext(StyleContext);
   if (!bigProjects.display) {
     return null;
   }
@@ -42,16 +43,9 @@ export default function StartupProject() {
                       ? "dark-mode project-card project-card-dark"
                       : "project-card project-card-light"
                   }
-                >
-                  {project.image ? (
-                    <div className="project-image">
-                      <img
-                        src={project.image}
-                        alt={project.projectName}
-                        className="card-image"
-                      ></img>
-                    </div>
-                  ) : null}
+                ><div className="project-icon">
+                    <GoProject size={50} />
+                  </div>
                   <div className="project-detail">
                     <h5
                       className={isDark ? "dark-mode card-title" : "card-title"}

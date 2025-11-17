@@ -5,3 +5,20 @@
   color: white;
   transition: "0.1s";
 }
+/* --- ADD THIS CODE TO THE END OF Main.scss --- */
+
+/* This targets the container in your StackProgress component */
+.skills-container {
+  display: flex;         /* This creates the row */
+  align-items: center;   /* This centers them vertically */
+}
+
+/* This makes the skill bars (left side) take up 50% */
+.skills-bar {
+  flex: 1;
+}
+
+/* This makes the image (right side) take up 50% */
+.skills-image {
+  flex: 1;
+}

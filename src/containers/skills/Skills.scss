@@ -1,64 +1,137 @@
 @import "../../_globalColor";
 
 .skills-main-div {
-  display: flex;
   width: 100%;
-  overflow: hidden;
+  padding: 80px 0; // Gives the section top/bottom breathing room
 }
 
-.skills-text-div {
-  margin-left: 50px;
+/*
+ * --- THIS IS THE MAIN FIX ---
+ * We are making the container a vertical flexbox
+ * and centering all its children.
+ */
+.skills-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  /* --- UPDATED RULES --- */
+  display: flex;
+  flex-direction: column;
+  align-items: center; // This centers the heading, subtitle, and grid
 }
 
-.skills-main-div > * {
-  flex: 1;
-  margin-bottom: 30px;
-}
-
-.skills-image-div > img {
-  max-width: 100%;
-  height: auto;
-}
-
+/*
+ * --- THIS IS THE 2ND FIX ---
+ * Adding text-align: center here ensures that if your
+ * heading wraps to two lines, both lines are centered.
+ */
 .skills-heading {
   font-size: 56px;
   font-weight: 400;
-}
-.subTitle {
-  color: $subTitle;
+  margin-bottom: 20px;
+  text-align: center; // Ensures wrapped text is centered
 }
 
-/* Media Query */
-@media (max-width: 1380px) {
-  .skills-heading {
-    font-size: 40px;
+/*
+ * --- THIS IS THE 3RD FIX ---
+ * This centers the text inside the subtitle paragraph.
+ */
+.skills-subtitle {
+  font-size: 20px;
+  color: $subTitle;
+  margin-bottom: 50px;
+  max-width: 700px; // Keeps the subtitle from getting too wide
+  text-align: center; // Centers the subtitle text
+}
+
+/* --- The Grid --- */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  width: 100%; // Ensure grid takes up the container width
+}
+
+/* --- The Card --- */
+.skill-card {
+  background: $card-color;
+  border-radius: 20px;
+  padding: 30px;
+  text-align: left;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid transparent;
+
+  .dark-mode & {
+    background: $dark-card-color;
+    border: 1px solid $dark-card-border;
+  }
+
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+
+    .dark-mode & {
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+    }
   }
 }
+
+.skill-card-icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+
+  img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+    object-fit: contain;
+  }
+}
+
+.skill-card-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* --- The Pills --- */
+.skill-pills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.skill-pill {
+  background-color: $pill-color;
+  color: $pill-text-color;
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
+
+  .dark-mode & {
+    background-color: $dark-pill-color;
+    color: $dark-pill-text-color;
+  }
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 992px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 768px) {
   .skills-heading {
     font-size: 30px;
-    text-align: center;
   }
-  .greeting-text-p {
-    font-size: 16px;
-    line-height: normal;
-  }
-  .skills-main-div {
-    flex-direction: column;
-  }
-  .skills-text-div {
-    margin-left: 0px;
-    margin: 20px;
-  }
-  .skills-text {
+  .skills-subtitle {
     font-size: 16px;
   }
-  .skills-text-subtitle {
-    font-size: 16px;
-    text-align: center;
-  }
-  .skills-image-div {
-    /* display: none; */
-    order: 2;
+  .skills-grid {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
