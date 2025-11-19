@@ -1,9 +1,11 @@
 @import "../../_globalColor";
-
 .skills-main-div {
   width: 100%;
-  padding: 80px 0; // Gives the section top/bottom breathing room
+  padding-top: 20px;   // reduced from 60px -> 10px
+  padding-bottom: 40px;
 }
+  
+
 
 /*
  * --- THIS IS THE MAIN FIX ---

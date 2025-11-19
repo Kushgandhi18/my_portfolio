@@ -19,12 +19,14 @@ const illustration = {
 // Greeting Section
 const greeting = {
   username: "Kush Gandhi",
-  title: "Hello 👋, I'm Kush Gandhi",
+  title: "Hi, I'm Kush Gandhi",
   subTitle: emoji(
     "A passionate Software Engineer with expertise in Full-Stack Development, Flutter, and Cloud Computing. I love designing scalable systems and solving real-world problems through clean architecture and innovation."
   ),
   resumeLink: "https://drive.google.com/file/d/1fUaOSlfHBmC2WV9HzI_D6e4jPf8kJ0kC/view?usp=sharing",
-  displayGreeting: true
+  displayGreeting: true,
+  profileImage: require("./assets/images/my_profile.png"),
+
 };
 
 // Social Media Links
@@ -152,7 +154,7 @@ const techStack = {
     { Stack: "Backend & APIs", progressPercentage: "85%" },
     { Stack: "Machine Learning", progressPercentage: "75%" }
   ],
-  displayCodersrank: false
+  displayCodersrank: true,
 };
 
 // Work Experience Section
@@ -188,19 +190,16 @@ const bigProjects = {
   subtitle: "Some of my selected projects showcasing technical expertise.",
   projects: [
     {
-      image: require("./assets/images/Algorithmic_Trading.png"),
       projectName: "PulseText AI",
       projectDesc: "Built a cross-platform speech recognition app using Flutter and ONNX models with 92%+ accuracy, enabling real-time and offline transcription.",
       footerLink: [{ name: "View Project", url: "https://github.com/Kushgandhi18/PulseText-AI" }]
     },
     {
-      image: require("./assets/images/shoebuddy.png"),
       projectName: "ShoeBuddy - Ecommerce",
       projectDesc: "Engineered a Flutter e-commerce app with secure authentication and an ML recommendation model that achieved a 72% increase in click-through rate.",
       footerLink: [{ name: "View Project", url: "https://github.com/Kushgandhi18/ShoeBuddy" }]
     },
     {
-      image: require("./assets/images/Algorithmic_Trading.png"),
       projectName: "Chatbot (Hackathon Project)",
       projectDesc: "Developed a RESTful API backend using Flask and NodeJS, facilitating real-time data exchange and improving chatbot response times by 45%.",
       footerLink: [{ name: "View Project", url: "https://github.com/Kushgandhi18/Chatbot" }]
